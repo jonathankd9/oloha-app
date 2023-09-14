@@ -1,11 +1,23 @@
-import {StatusBar} from "expo-status-bar";
-import {StyleSheet, Text, View} from "react-native";
+import {useState, useEffect} from "react";
+import * as Font from "expo-font";
+// import "react-native-gesture-handler";
+// import "react-native-safe-area-context";
+import MainNavigation from "./src/navigation/MainNavigation";
 
 export default function App() {
-	return (
-		<View className="flex-1 justify-center items-center">
-			<Text>Open up App.js to start working on your app!</Text>
-			<StatusBar style="auto" />
-		</View>
-	);
+	const [fontsLoaded, setFontsLoaded] = useState(false);
+
+	const loadFonts = async () => {
+		await Font.loadAsync({
+			// Gilroy
+			"gilroy-bold": require("./assets/fonts/gilroy/Gilroy-Bold.ttf"),
+			"gilroy-regular": require("./assets/fonts/gilroy/Gilroy-Regular.ttf"),
+		});
+		setFontsLoaded(true);
+	};
+	useEffect(() => {
+		loadFonts();
+	}, []);
+
+	return fontsLoaded && <MainNavigation />;
 }
