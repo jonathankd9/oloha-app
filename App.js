@@ -12,6 +12,8 @@ export default function App() {
 			// Gilroy
 			"gilroy-bold": require("./assets/fonts/gilroy/Gilroy-Bold.ttf"),
 			"gilroy-regular": require("./assets/fonts/gilroy/Gilroy-Regular.ttf"),
+			"gilroy-medium": require("./assets/fonts/gilroy/Gilroy-Medium.ttf"),
+			"gilroy-semibold": require("./assets/fonts/gilroy/Gilroy-SemiBold.ttf"),
 		});
 		setFontsLoaded(true);
 	};
