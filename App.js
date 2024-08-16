@@ -1,8 +1,8 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import * as Font from "expo-font";
 // import "react-native-gesture-handler";
 // import "react-native-safe-area-context";
-import MainNavigation from "./src/navigation/MainNavigation";
+import MainStack from "./src/navigation/StackNavigation";
 
 export default function App() {
 	const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -21,5 +21,5 @@ export default function App() {
 		loadFonts();
 	}, []);
 
-	return fontsLoaded && <MainNavigation />;
+	return fontsLoaded && <MainStack />;
 }
