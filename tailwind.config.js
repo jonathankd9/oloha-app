@@ -1,10 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: [
-		"./App.{js,jsx,ts,tsx}",
-		"./<custom directory>/**/*.{js,jsx,ts,tsx}",
-		"/app/index.tsx",
-	],
+	content: ["./app/**/*.{js,jsx,ts,tsx}"],
 	theme: {
 		colors: {
 			primary: "#FEBD2F",
@@ -12,6 +8,7 @@ module.exports = {
 			tertiary: "#314BCE",
 			placeholder: "#696974",
 			dark: "#000",
+			main: "#fff"
 		},
 	},
 	plugins: [],
