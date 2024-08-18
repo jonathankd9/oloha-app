@@ -8,7 +8,7 @@ module.exports = {
 			tertiary: "#314BCE",
 			placeholder: "#696974",
 			dark: "#000",
-			main: "#fff"
+			main: "#fff",
 		},
 	},
 	plugins: [],
