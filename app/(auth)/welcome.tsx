@@ -16,7 +16,7 @@ export default function Welcome() {
 		<SafeAreaView className="flex-1 bg-primary">
 			<View className="flex-1 justify-between">
 				<StatusBar style="dark" />
-				<View className="w-full flex-[0.5] flex justify-center items-center">
+				<View className="w-full flex-[0.4] flex justify-center items-center">
 					<View className="flex flex-row items-center gap-5">
 						<Image source={Logo} className="mb-5 w-20 h-20" />
 						<Text
@@ -28,7 +28,7 @@ export default function Welcome() {
 					</View>
 				</View>
 
-				<View className="flex flex-[0.5] bg-[#F1F1F5] py-4 px-6 mx-4 mb-2 justify-between rounded-xl">
+				<View className="flex flex-[0.6] bg-[#F1F1F5] py-4 px-6 mx-4 mb-2 justify-between rounded-xl">
 					<View className="">
 						<Text
 							className="text-2xl mb-2"
@@ -102,7 +102,7 @@ export default function Welcome() {
 					</View>
 
 					{/* Login or Sign up */}
-					<View className="flex flex-row justify-between">
+					<View className=" flex-row justify-between">
 						<TouchableOpacity
 							className="bg-primary py-4 rounded-xl w-[48%]"
 							onPress={() => router.push("signin")}

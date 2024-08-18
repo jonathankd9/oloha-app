@@ -16,9 +16,9 @@ export default function Onboard3() {
 		<SafeAreaView className="flex-1">
 			<View className="bg-[#fff] flex-1 justify-between">
 				<StatusBar style="light" />
-				<View className="w-full flex-[0.4] flex justify-center -mt-24 items-center">
+				<View className="w-full flex-[0.6] flex justify-center -mt-24 items-center">
 					<Image source={Background} alt="" className="w-full z-0 relative" />
-					<Image source={Image3} className="z-10 absolute top-56" />
+					<Image source={Image3} className="z-10 absolute top-52" />
 				</View>
 
 				<View className="flex flex-[0.3] bg-[#F1F1F5] py-8 px-12 mx-4 my-2 justify-between rounded-xl">
@@ -41,7 +41,7 @@ export default function Onboard3() {
 					<View className="gap-2">
 						<TouchableOpacity
 							className="bg-[#000] py-4 items-center rounded-xl"
-							onPress={() => router.push("onboard2")}
+							onPress={() => router.push("welcome")}
 						>
 							<Text
 								className="text-base text-[#fff]"
